@@ -24,22 +24,22 @@
   <!-- Hero Section -->
   <section id="home" class="min-h-screen flex flex-col justify-center items-center px-6">
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center mt-20">
-    
-    <!-- Left: Text -->
+
+      <!-- Left: Text -->
       <div class="text-center md:text-left">
         <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
           Hi, I'm <span class="text-indigo-500">Mantha Sai Gopal</span>
         </h1>
         <p class="text-lg md:text-xl text-gray-300 mb-8">
-          Computer Vision and Deep Learning enthusiast.  
+          Computer Vision and Deep Learning enthusiast.
           Experienced in PyTorch, YOLO, and deploying AI solutions on edge devices.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-          <a href="#projects" 
+          <a href="#projects"
              class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold px-6 py-3 rounded-2xl shadow-lg transition-transform transform hover:scale-105">
             View My Work
           </a>
-          <a href="#contact" 
+          <a href="#contact"
              class="border border-gray-400 text-gray-200 hover:text-white hover:border-white px-6 py-3 rounded-2xl transition">
             Contact Me
           </a>
@@ -48,9 +48,9 @@
 
       <!-- Right: Profile Image -->
       <div class="flex justify-center md:justify-end">
-        <img src="assets/img/gopaldp.jpg" 
-           alt="Profile photo" 
-           class="w-60 h-60 md:w-72 md:h-72 rounded-full shadow-xl border-4 border-gray-800 object-cover">
+        <img src="assets/img/gopaldp.jpg"
+             alt="Profile photo"
+             class="w-60 h-60 md:w-72 md:h-72 rounded-full shadow-xl border-4 border-gray-800 object-cover">
       </div>
     </div>
   </section>
@@ -60,7 +60,7 @@
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-4xl font-bold mb-6">About Me</h2>
       <p class="text-gray-300 text-lg leading-relaxed">
-        I am a polymath with strong foundation in both Computer Science and Mathematics. My work includes research projects in deep learning, 
+        I am a polymath with strong foundation in both Computer Science and Mathematics. My work includes research projects in deep learning,
         including reading and implementing papers from scratch as well as application oriented such as real-time vein visualization and 3D reconstruction
         pipeline for a portable vein viewer device as an intern at IIT Hyderabad.
       </p>
@@ -72,38 +72,54 @@
     <div class="max-w-6xl mx-auto">
       <h2 class="text-4xl font-bold text-center mb-12">Projects</h2>
       <div class="grid md:grid-cols-3 gap-8">
+
         <!-- Project 1 -->
         <div class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform">
           <img src="assets/img/neuralnet.png" alt="Project 1" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-2">Neural Net in C++</h3>
-            <p class="text-gray-400 text-sm mb-4">Built feedforward neural network framework entirely from scratch in C++. 
-              Supports dynamic stacking of layers to build custom model architectures. Each layer is configurable with activation functions including ReLU, Sigmoid, and Softmax, and supports both random and Xavier initialization for weights.
-              Enables end-to-end model training using backpropagation.
-            </p>
+            <ul class="list-disc list-inside text-gray-400 text-sm mb-4 space-y-1">
+              <li>Built feedforward neural network framework entirely from scratch in C++</li>
+              <li>Supports dynamic stacking of layers to build custom model architectures</li>
+              <li>Configurable activation functions: ReLU, Sigmoid, and Softmax</li>
+              <li>Supports random and Xavier initialization for weights</li>
+              <li>End-to-end training with backpropagation</li>
+            </ul>
             <a href="#" class="text-indigo-400 hover:underline">View Project →</a>
           </div>
         </div>
+
         <!-- Project 2 -->
         <div class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform">
           <img src="assets/img/veinviewer.webp" alt="Project 2" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-2">Portable Vein Viewer</h3>
-            <p class="text-gray-400 text-sm mb-4">Contributed to an ongoing project of developing a low-cost handheld vein viewer device by implementing a modular end-to-end pipeline for real-time 3D reconstruction of veins from stereo NIR images using Pi cameras on Raspberry Pi 5.</p>
+            <ul class="list-disc list-inside text-gray-400 text-sm mb-4 space-y-1">
+              <li>Developing a low-cost handheld vein viewer device</li>
+              <li>Implemented modular end-to-end pipeline for real-time 3D reconstruction</li>
+              <li>Used stereo NIR images captured via Pi cameras</li>
+              <li>Deployed on Raspberry Pi 5 for real-time processing</li>
+            </ul>
             <a href="#" class="text-indigo-400 hover:underline">View Project →</a>
           </div>
         </div>
+
         <!-- Project 3 -->
         <div class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform">
           <img src="assets/img/drivebot.png" alt="Project 3" class="w-full h-48 object-cover">
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-2">DriveBot: AI Assistant for Renault Triber (RAG-based Chatbot)</h3>
-            <p class="text-gray-400 text-sm mb-4">Created a context-aware chatbot by integrating the Renault Triber car manual with the Flan-T5 LLM using LangChain and Retrieval-Augmented Generation (RAG), enabling users to get real-time answers without reading lengthy manuals. 
-              Parsed the Renault Triber car manual, split it into semantic chunks and generated embeddings using all-MiniLM-L6-v2 model. Indexed the embeddings with FAISS to enable efficient similarity-based retrieval.
-              Integrated google/flan-t5-base, an instruction-tuned LLM on HuggingFace and LangChain to generate grounded, context-aware answers.</p>
+            <ul class="list-disc list-inside text-gray-400 text-sm mb-4 space-y-1">
+              <li>Integrated Renault Triber car manual with Flan-T5 LLM using LangChain</li>
+              <li>Implemented Retrieval-Augmented Generation (RAG) for context-aware answers</li>
+              <li>Parsed and chunked car manual into semantic sections</li>
+              <li>Generated embeddings with all-MiniLM-L6-v2 and indexed using FAISS</li>
+              <li>Enabled real-time Q&A without reading lengthy manuals</li>
+            </ul>
             <a href="#" class="text-indigo-400 hover:underline">View Project →</a>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -113,7 +129,7 @@
     <div class="max-w-3xl mx-auto text-center">
       <h2 class="text-4xl font-bold mb-6">Get In Touch</h2>
       <p class="text-gray-300 mb-8">Interested in collaborating or have an opportunity? Feel free to reach out!</p>
-      <a href="mailto:your.email@example.com" 
+      <a href="mailto:your.email@example.com"
          class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold px-6 py-3 rounded-2xl shadow-lg transition-transform transform hover:scale-105">
         Say Hello
       </a>
