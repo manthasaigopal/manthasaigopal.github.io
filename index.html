@@ -3,174 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mantha Sai Gopal</title>
+  <title>Mantha Sai Gopal | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .fade-up {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.8s ease, transform 0.8s ease;
-    }
-    .fade-up.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
 </head>
-<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500">
+<body class="bg-gray-950 text-gray-100 font-sans">
 
   <!-- Navbar -->
-  <nav class="fixed w-full bg-white/70 dark:bg-gray-800/70 backdrop-blur shadow z-50">
-    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
-      <h1 class="font-bold text-xl">Mantha Sai Gopal</h1>
-      <div class="flex gap-6 items-center">
-        <a href="#experience" class="hover:text-indigo-500">Experience</a>
-        <a href="#projects" class="hover:text-indigo-500">Projects</a>
-        <a href="#education" class="hover:text-indigo-500">Education</a>
-        <a href="#conferences" class="hover:text-indigo-500">Conferences</a>
-        <a href="#skills" class="hover:text-indigo-500">Skills</a>
-        <a href="#contact" class="hover:text-indigo-500">Contact</a>
+  <nav class="fixed top-0 left-0 w-full bg-gray-900/80 backdrop-blur-md shadow z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#home" class="text-xl font-bold text-indigo-400">MSG</a>
+      <div class="space-x-6 hidden md:flex">
+        <a href="#home" class="hover:text-indigo-400 transition">Home</a>
+        <a href="#about" class="hover:text-indigo-400 transition">About</a>
+        <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
+        <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-indigo-500 to-purple-600 text-white text-center px-4">
-    <h1 class="text-5xl md:text-6xl font-bold mb-4 fade-up">Hi, I’m <span class="text-yellow-300">Mantha Sai Gopal</span></h1>
-    <p class="text-xl mb-6 fade-up">AI/ML Engineer | Computer Vision Enthusiast</p>
-    <div class="flex gap-4 fade-up">
-      <a href="#projects" class="px-6 py-3 bg-white text-indigo-600 rounded-xl font-semibold shadow hover:scale-105 transition">View Projects</a>
-      <a href="#contact" class="px-6 py-3 bg-yellow-400 text-gray-900 rounded-xl font-semibold shadow hover:scale-105 transition">Contact Me</a>
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <div class="max-w-3xl mt-20">
+      <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+        Hi, I'm <span class="text-indigo-400">Mantha Sai Gopal</span>
+      </h1>
+      <p class="text-lg md:text-xl text-gray-300 mb-8">
+        Computer Vision & Deep Learning enthusiast.  
+        Experienced in PyTorch, YOLO, and deploying AI solutions on edge devices.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#projects" 
+           class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold px-6 py-3 rounded-2xl shadow-lg transition-transform transform hover:scale-105">
+          View My Work
+        </a>
+        <a href="#contact" 
+           class="border border-gray-400 text-gray-200 hover:text-white hover:border-white px-6 py-3 rounded-2xl transition">
+          Contact Me
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="max-w-4xl mx-auto py-20 px-6 fade-up">
-    <h2 class="text-3xl font-bold mb-6">About Me</h2>
-    <p class="text-lg leading-relaxed">
-      I’m a passionate Computer Vision and Machine Learning practitioner with experience in PyTorch, OpenCV, and deep learning models.
-      Currently exploring edge deployment, RAG-based systems, and modern AI applications.
-    </p>
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-900 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6">About Me</h2>
+      <p class="text-gray-300 text-lg leading-relaxed">
+        I hold an M.Sc. in Mathematics (Computer Science specialization) and I am pursuing an M.Tech in Computer Science.  
+        I specialize in computer vision, object detection, image classification, and deploying real-time AI solutions.  
+        I have experience with PyTorch, OpenCV, YOLOv8, and edge deployment on Raspberry Pi.
+      </p>
+    </div>
   </section>
 
-  <!-- Experience -->
-  <section id="experience" class="bg-gray-100 dark:bg-gray-800 py-20 px-6 fade-up">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-10">Experience</h2>
-      <div class="space-y-8">
-        <div class="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow">
-          <h3 class="font-semibold text-xl">Deep Learning Intern – Hyperverge</h3>
-          <p class="text-gray-600 dark:text-gray-300">Worked on computer vision pipelines, model optimization, and real-time deployment.</p>
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12">Projects</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform">
+          <img src="assets/img/project1.png" alt="Project 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">Bird Species Classifier</h3>
+            <p class="text-gray-400 text-sm mb-4">Image classification using ResNet with bounding box cropping on Caltech dataset.</p>
+            <a href="#" class="text-indigo-400 hover:underline">View Project →</a>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform">
+          <img src="assets/img/project2.png" alt="Project 2" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">YOLOv8 Edge Deployment</h3>
+            <p class="text-gray-400 text-sm mb-4">Trained YOLOv8n for object detection and deployed on Raspberry Pi for real-time inference.</p>
+            <a href="#" class="text-indigo-400 hover:underline">View Project →</a>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform">
+          <img src="assets/img/project3.png" alt="Project 3" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">Neural Style Transfer</h3>
+            <p class="text-gray-400 text-sm mb-4">Implemented artistic neural style transfer to generate visually compelling images.</p>
+            <a href="#" class="text-indigo-400 hover:underline">View Project →</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="max-w-6xl mx-auto py-20 px-6 fade-up">
-    <h2 class="text-3xl font-bold mb-10">Projects</h2>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="bg-white dark:bg-gray-700 rounded-2xl shadow hover:shadow-lg transition">
-        <img src="https://via.placeholder.com/400x200" class="rounded-t-2xl" alt="Project 1">
-        <div class="p-4">
-          <h3 class="font-semibold text-xl mb-2">Bird Species Classification</h3>
-          <p class="text-gray-600 dark:text-gray-300 mb-4">ResNet-based model with bounding box preprocessing to classify 200+ bird species.</p>
-          <a href="https://github.com/yourusername/project1" class="text-indigo-600 font-semibold">View on GitHub →</a>
-        </div>
-      </div>
-      <div class="bg-white dark:bg-gray-700 rounded-2xl shadow hover:shadow-lg transition">
-        <img src="https://via.placeholder.com/400x200" class="rounded-t-2xl" alt="Project 2">
-        <div class="p-4">
-          <h3 class="font-semibold text-xl mb-2">Real-time YOLOv8 Deployment</h3>
-          <p class="text-gray-600 dark:text-gray-300 mb-4">Trained YOLOv8n model and deployed it on Raspberry Pi for edge inference.</p>
-          <a href="https://github.com/yourusername/project2" class="text-indigo-600 font-semibold">View on GitHub →</a>
-        </div>
-      </div>
-      <div class="bg-white dark:bg-gray-700 rounded-2xl shadow hover:shadow-lg transition">
-        <img src="https://via.placeholder.com/400x200" class="rounded-t-2xl" alt="Project 3">
-        <div class="p-4">
-          <h3 class="font-semibold text-xl mb-2">RAG Chatbot</h3>
-          <p class="text-gray-600 dark:text-gray-300 mb-4">Built an end-to-end RAG chatbot using HuggingFace + FAISS for PDF QA.</p>
-          <a href="https://github.com/yourusername/project3" class="text-indigo-600 font-semibold">View on GitHub →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education -->
-  <section id="education" class="max-w-4xl mx-auto py-20 px-6 fade-up">
-    <h2 class="text-3xl font-bold mb-10">Education</h2>
-    <div class="space-y-6">
-      <div class="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow">
-        <h3 class="font-semibold text-xl">M.Tech in Computer Science</h3>
-        <p class="text-gray-600 dark:text-gray-300">Focus on deep learning, computer vision, and applied AI research.</p>
-      </div>
-      <div class="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow">
-        <h3 class="font-semibold text-xl">M.Sc. Mathematics (Specialization in Computer Science)</h3>
-        <p class="text-gray-600 dark:text-gray-300">Strong foundation in applied mathematics and computational methods.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Conferences -->
-  <section id="conferences" class="bg-gray-100 dark:bg-gray-800 py-20 px-6 fade-up">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-10">Conferences</h2>
-      <div class="space-y-6">
-        <div class="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow">
-          <h3 class="font-semibold text-xl">Conference Presentation Example</h3>
-          <p class="text-gray-600 dark:text-gray-300">Presented research on computer vision applications at [Conference Name].</p>
-        </div>
-        <!-- Add more conference entries as needed -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="py-20 px-6 fade-up">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-10">Skills</h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        <div class="p-4 bg-white dark:bg-gray-700 rounded-2xl shadow">🐍 Python</div>
-        <div class="p-4 bg-white dark:bg-gray-700 rounded-2xl shadow">🔥 PyTorch</div>
-        <div class="p-4 bg-white dark:bg-gray-700 rounded-2xl shadow">👁️ OpenCV</div>
-        <div class="p-4 bg-white dark:bg-gray-700 rounded-2xl shadow">🤖 Deep Learning</div>
-        <div class="p-4 bg-white dark:bg-gray-700 rounded-2xl shadow">📊 Data Science</div>
-        <div class="p-4 bg-white dark:bg-gray-700 rounded-2xl shadow">🖼️ Computer Vision</div>
-        <div class="p-4 bg-white dark:bg-gray-700 rounded-2xl shadow">⚡ YOLOv8</div>
-        <div class="p-4 bg-white dark:bg-gray-700 rounded-2xl shadow">☁️ Deployment</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="max-w-4xl mx-auto py-20 px-6 text-center fade-up">
-    <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
-    <p class="mb-6 text-lg">Let’s connect! I’m open to collaborations, opportunities, and discussions.</p>
-    <div class="flex justify-center gap-6 text-2xl">
-      <a href="mailto:youremail@example.com" class="text-indigo-600 hover:text-indigo-800">📧</a>
-      <a href="https://linkedin.com/in/yourprofile" class="text-indigo-600 hover:text-indigo-800">🔗</a>
-      <a href="https://github.com/yourusername" class="text-indigo-600 hover:text-indigo-800">💻</a>
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-900 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6">Get In Touch</h2>
+      <p class="text-gray-300 mb-8">Interested in collaborating or have an opportunity? Feel free to reach out!</p>
+      <a href="mailto:your.email@example.com" 
+         class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold px-6 py-3 rounded-2xl shadow-lg transition-transform transform hover:scale-105">
+        Say Hello
+      </a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-6 text-center">
-    <p>© 2025 Mantha Sai Gopal. Built with ❤️ using TailwindCSS.</p>
+  <footer class="bg-gray-950 py-6 text-center text-gray-500">
+    <p>© 2025 Mantha Sai Gopal. All rights reserved.</p>
   </footer>
-
-  <script>
-    // Animation on scroll
-    const faders = document.querySelectorAll(".fade-up");
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-        }
-      });
-    }, { threshold: 0.2 });
-    faders.forEach(el => observer.observe(el));
-  </script>
 
 </body>
 </html>
