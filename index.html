@@ -4,267 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mantha Sai Gopal</title>
-
     <script src="https://cdn.tailwindcss.com"></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
     <style>
         body{
             font-family:Inter,sans-serif;
         }
+        .accent{ color:#0F6B63; }
+        .accent-bg{ background-color:#0F6B63; }
+        a.link-accent{ color:#0F6B63; }
+        a.link-accent:hover{ color:#0A4C46; }
     </style>
-
 </head>
-
 <body class="bg-white text-gray-900">
-
 <!-- Navigation -->
-
 <header class="border-b">
-
 <div class="max-w-4xl mx-auto flex justify-between items-center py-6 px-6">
-
 <h1 class="text-xl font-semibold">
     <a href="/">Mantha Sai Gopal</a>
 </h1>
-
 <nav class="space-x-6 text-gray-600">
-
 <a href="/research/" class="hover:text-black">Research</a>
-
 <a href="/ai-papers/" class="hover:text-black">AI Papers</a>
-
 <a href="https://medium.com/@YOUR_USERNAME" target="_blank" class="hover:text-black">Writing</a>
-
 <a href="https://github.com/YOUR_USERNAME" target="_blank" class="hover:text-black">GitHub</a>
-
 </nav>
-
 </div>
-
 </header>
 
-
-
-<!-- Intro -->
-
+<!-- About -->
 <main class="max-w-4xl mx-auto px-6 py-20">
-
-<h2 class="text-5xl font-semibold leading-tight">
-
-Machine Learning Engineer working on
-Computer Vision and Representation Learning.
-
-</h2>
-
-<p class="mt-10 text-lg leading-8 text-gray-700">
-
-I build computer vision systems and study modern machine learning,
-with interests in representation learning, foundation models,
-vision transformers, and geometric vision.
-
-This website collects my research, technical writing,
-and notes from papers that I find interesting.
-
-</p>
-
+<h3 class="text-2xl font-semibold">
+About
+</h3>
+<div class="mt-8">
+    <div class="text-sm font-medium tracking-wide uppercase accent mb-3">
+        Machine Learning Engineer
+    </div>
+    <h2 class="text-4xl font-semibold leading-tight max-w-2xl">
+        Working on computer vision
+        and representation learning.
+    </h2>
+    <p class="mt-8 text-lg leading-8 text-gray-700 max-w-2xl">
+        I build computer vision systems and study modern machine learning,
+        with interests in representation learning, foundation models,
+        vision transformers, and geometric vision.
+        This site collects my research, technical writing,
+        and notes from papers I find interesting.
+    </p>
+</div>
 </main>
 
-
-
 <!-- News -->
-
 <section class="max-w-4xl mx-auto px-6">
-
 <h3 class="text-2xl font-semibold">
-
 News
-
 </h3>
-
 <div class="mt-8 border-t">
-
-<div class="py-6 border-b">
-
-<div class="text-sm text-gray-500">
-
-July 2026
-
+<div class="py-5 border-b flex gap-6">
+    <div class="text-sm text-gray-500 w-24 shrink-0 pt-0.5">
+        Jul 2026
+    </div>
+    <p>
+        Published <a href="#" class="link-accent hover:underline">DINO Explained</a>
+    </p>
 </div>
-
-<p class="mt-2">
-
-Published my article:
-<a href="#" class="text-blue-600 hover:underline">
-
-DINO Explained
-
-</a>
-
-</p>
-
+<div class="py-5 border-b flex gap-6">
+    <div class="text-sm text-gray-500 w-24 shrink-0 pt-0.5">
+        Jun 2026
+    </div>
+    <p>
+        Paper accepted at RAAM 2026: <i>A Probabilistic Framework for the Erdős–Kac Theorem</i>
+    </p>
 </div>
-
-<div class="py-6 border-b">
-
-<div class="text-sm text-gray-500">
-
-June 2026
-
+<div class="py-5 border-b flex gap-6">
+    <div class="text-sm text-gray-500 w-24 shrink-0 pt-0.5">
+        May 2026
+    </div>
+    <p>
+        Started the <a href="/ai-papers/" class="link-accent hover:underline">AI Papers</a> collection
+    </p>
 </div>
-
-<p class="mt-2">
-
-Paper accepted at RAAM 2026:
-<i>A Probabilistic Framework for the Erdős–Kac Theorem.</i>
-
-</p>
-
 </div>
-
-<div class="py-6 border-b">
-
-<div class="text-sm text-gray-500">
-
-May 2026
-
-</div>
-
-<p class="mt-2">
-
-Started the
-<a href="/ai-papers/" class="text-blue-600 hover:underline">
-
-AI Papers
-
-</a>
-
-collection.
-
-</p>
-
-</div>
-
-</div>
-
 </section>
 
-
-
-<!-- Featured -->
-
+<!-- Research & Writing -->
 <section class="max-w-4xl mx-auto px-6 mt-24">
-
 <h3 class="text-2xl font-semibold">
-
-Featured Research
-
+Research &amp; Writing
 </h3>
+<div class="mt-8 grid sm:grid-cols-2 gap-5">
 
-<ul class="mt-8 space-y-5">
-
-<li>
-
-<a href="/research/" class="text-blue-600 hover:underline">
-
-Similarity-Weighted FPS for PerSAM
-
+<a href="/research/" class="group block rounded-lg border border-gray-200 p-6 hover:border-gray-400 transition">
+    <div class="text-xs font-medium uppercase tracking-wide accent">Research</div>
+    <div class="mt-3 font-medium leading-snug group-hover:underline">
+        Similarity-Weighted FPS for PerSAM
+    </div>
+    <div class="mt-2 text-sm text-gray-600">
+        Prompt sampling for one-shot part segmentation.
+    </div>
 </a>
 
-<div class="text-gray-600">
-
-Prompt sampling for one-shot part segmentation.
-
-</div>
-
-</li>
-
-<li>
-
-<a href="/research/" class="text-blue-600 hover:underline">
-
-Multi-view Damage Deduplication
-
+<a href="/research/" class="group block rounded-lg border border-gray-200 p-6 hover:border-gray-400 transition">
+    <div class="text-xs font-medium uppercase tracking-wide accent">Research</div>
+    <div class="mt-3 font-medium leading-snug group-hover:underline">
+        Multi-view Damage Deduplication
+    </div>
+    <div class="mt-2 text-sm text-gray-600">
+        VGGT-based industrial research.
+    </div>
 </a>
 
-<div class="text-gray-600">
-
-VGGT-based industrial research.
-
-</div>
-
-</li>
-
-<li>
-
-<a href="/research/" class="text-blue-600 hover:underline">
-
-A Probabilistic Framework for the Erdős–Kac Theorem
-
+<a href="/research/" class="group block rounded-lg border border-gray-200 p-6 hover:border-gray-400 transition">
+    <div class="text-xs font-medium uppercase tracking-wide accent">Research · RAAM 2026</div>
+    <div class="mt-3 font-medium leading-snug group-hover:underline">
+        A Probabilistic Framework for the Erdős–Kac Theorem
+    </div>
+    <div class="mt-2 text-sm text-gray-600">
+        Accepted at RAAM 2026.
+    </div>
 </a>
 
-<div class="text-gray-600">
+<a href="#" class="group block rounded-lg border border-gray-200 p-6 hover:border-gray-400 transition">
+    <div class="text-xs font-medium uppercase tracking-wide accent">Writing</div>
+    <div class="mt-3 font-medium leading-snug group-hover:underline">
+        DINO Explained
+    </div>
+    <div class="mt-2 text-sm text-gray-600">
+        A walkthrough of self-supervised vision transformers.
+    </div>
+</a>
 
-Accepted at RAAM 2026.
-
+<div class="block rounded-lg border border-gray-200 p-6 opacity-60">
+    <div class="text-xs font-medium uppercase tracking-wide text-gray-400">Writing · Coming soon</div>
+    <div class="mt-3 font-medium leading-snug">
+        DINOv2 Explained
+    </div>
 </div>
 
-</li>
+<div class="block rounded-lg border border-gray-200 p-6 opacity-60">
+    <div class="text-xs font-medium uppercase tracking-wide text-gray-400">Writing · Coming soon</div>
+    <div class="mt-3 font-medium leading-snug">
+        Segment Anything Explained
+    </div>
+</div>
 
-</ul>
-
+</div>
 </section>
-
-
-
-<!-- Writing -->
-
-<section class="max-w-4xl mx-auto px-6 mt-24">
-
-<h3 class="text-2xl font-semibold">
-
-Latest Writing
-
-</h3>
-
-<ul class="mt-8 space-y-5">
-
-<li>
-
-<a href="#" class="text-blue-600 hover:underline">
-
-DINO Explained
-
-</a>
-
-</li>
-
-<li>
-
-DINOv2 Explained <span class="text-gray-500">(Coming Soon)</span>
-
-</li>
-
-<li>
-
-Segment Anything Explained
-<span class="text-gray-500">(Coming Soon)</span>
-
-</li>
-
-</ul>
-
-</section>
-
-
 
 <footer class="max-w-4xl mx-auto px-6 mt-28 py-8 border-t text-sm text-gray-500">
-
 © 2026 Mantha Sai Gopal
-
 </footer>
-
 </body>
 </html>
